@@ -1,0 +1,22 @@
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	controllerName="sap.ui.bootcampWebapp.controller.App"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<Text text="Username"/>
+	<Input 
+		value="{/field/username}"
+		description="Hello {/field/username}"
+    	valueLiveUpdate="true"
+    	width="100%"
+		type="Text" 
+		id="username"/>
+	<Text text="Password"/>
+	<Input 
+		type="Password" 
+		id="password"/>
+	<Button text="{i18n>loginButtonText}" press="onLoginPress"/>
+
+</mvc:View>
